@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/online_music"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:orientation="horizontal">
+
+    <!-- 经典，英文，流行，民谣， 轻音乐，古典这六个分类，其中已获取到英文，流行这两个部分的资源 -->
+    <TextView
+        android:id="@+id/classic"
+        android:layout_width="128dp"
+        android:layout_height="60dp"
+        android:layout_columnSpan="1"
+        android:gravity="center"
+        android:text="经典"
+        android:background="@drawable/textview" />
+
+    <TextView
+        android:id="@+id/light_music"
+        android:layout_width="128dp"
+        android:layout_height="60dp"
+        android:layout_columnSpan="1"
+        android:gravity="center"
+        android:text="轻音乐"
+        android:background="@drawable/textview" />
+
+    <TextView
+        android:id="@+id/classical"
+        android:layout_width="128dp"
+        android:layout_height="60dp"
+        android:layout_columnSpan="1"
+        android:gravity="center"
+        android:text="古典"
+        android:background="@drawable/textview"/>
+
+    <TextView
+        android:id="@+id/ballad"
+        android:layout_width="128dp"
+        android:layout_height="60dp"
+        android:layout_columnSpan="1"
+        android:gravity="center"
+        android:text="民谣"
+        android:background="@drawable/textview" />
+
+    <TextView
+        android:id="@+id/pop"
+        android:layout_width="128dp"
+        android:layout_height="60dp"
+        android:layout_columnSpan="1"
+        android:gravity="center"
+        android:text="流行"
+        android:background="@drawable/textview"/>
+
+    <TextView
+        android:id="@+id/english"
+        android:layout_width="128dp"
+        android:layout_height="60dp"
+        android:layout_columnSpan="1"
+        android:gravity="center"
+        android:text="英文"
+        android:background="@drawable/textview"
+        android:onClick="getEnglishMusic" />
+
+    <ListView
+        android:id="@+id/lv_sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_columnSpan="3" >
+
+    </ListView>
+</GridLayout>
